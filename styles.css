@@ -2,6 +2,7 @@
   box-sizing: border-box;
 }
 
+
 :root {
   --cell-size: 100px;
   --mark-size: calc(var(--cell-size) * .9);
@@ -9,6 +10,9 @@
 
 body {
   margin: 0;
+  background-image: url("https://cdn.wallpapersafari.com/52/49/yJPa7O.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .board {
@@ -109,7 +113,7 @@ body {
 .board.circle .cell:not(.x):not(.circle):hover::after {
   width: calc(var(--mark-size) * .7);
   height: calc(var(--mark-size) * .7);
-  background-color: white;
+  background-color: lightgrey;
 }
 
 .winning-message {
@@ -122,14 +126,14 @@ body {
   background-color: rgba(0, 0, 0, .9);
   justify-content: center;
   align-items: center;
-  color: white;
+  color: lightgrey;
   font-size: 5rem;
   flex-direction: column;
 }
 
 .winning-message button {
   font-size: 3rem;
-  background-color: white;
+  background-color: lightgrey;
   border: 1px solid black;
   padding: .25em .5em;
   cursor: pointer;
@@ -137,8 +141,8 @@ body {
 
 .winning-message button:hover {
   background-color: black;
-  color: white;
-  border-color: white;
+  color: lightgrey;
+  border-color: lightgrey;
 }
 
 .winning-message.show {
